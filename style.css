@@ -56,4 +56,24 @@ body {
 	margin-top: 20px;
   }
   
- 
+/* Add some basic styles for the quote element */
+#quote {
+	font-size: 1.5em;
+	margin: 0.5em 0;
+	opacity: 0;
+	transition: opacity 1s ease-out;
+  }
+  
+  /* Add a class to the quote element when it's being typed */
+  #quote.typing {
+	opacity: 1;
+  }
+  
+  /* Define a keyframe animation for the typing effect */
+  @keyframes typing {
+	from { width: 0; }
+	to { width: 100%; }
+  }
+  
+
+  
