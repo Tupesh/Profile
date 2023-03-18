@@ -1,4 +1,4 @@
-const quote = '"Life is what happens when you\'re busy making other plans."';
+const quote = '"All events have a cause, but the validity of that cause may be flawed."';
 const quoteElement = document.getElementById("quote");
 
 let i = 0;
