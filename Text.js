@@ -1,4 +1,4 @@
-const quote = '"All events have a cause, but the validity of that cause may be flawed."';
+const quote = '"All events have a cause, although the validity of the cause may be flawed."';
 const quoteElement = document.getElementById("quote");
 
 let i = 0;
