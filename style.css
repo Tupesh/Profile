@@ -45,6 +45,13 @@ body {
     bottom: -100; /* Adjust this value as needed */
 }
 
+@media (max-width: 768px) {
+    .profile-pic img {
+        bottom: -20px; /* Adjust the value for smaller screens */
+    }
+}
+
+
    .profile-info {
 	text-align: center;
   }
