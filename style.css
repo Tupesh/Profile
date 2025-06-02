@@ -12,9 +12,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding-bottom: 100px; /* ensures footer doesn’t cover content */
+  /* Removed justify-content */
+  min-height: 100vh;       /* allows scroll if needed */
+  padding-bottom: 120px;   /* space for fixed footer */
 }
 
 
