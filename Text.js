@@ -1,16 +1,19 @@
-const quote = '"All events have a cause, although the validity of the cause may be flawed."';
+// Typing quote animation for the profile
+const quote = `"All events have a cause, although the validity of the cause may be flawed."`;
 const quoteElement = document.getElementById("quote");
 
 let i = 0;
-const typeWriter = () => {
+
+function typeWriter() {
   if (i < quote.length) {
     quoteElement.innerHTML += quote.charAt(i);
     i++;
-    setTimeout(typeWriter, 50); // change the delay (in ms) to adjust typing speed
-  } else {
-    // Don't remove the .typing class so the quote stays visible
+    setTimeout(typeWriter, 50); // adjust typing speed here
   }
-};
+}
 
-quoteElement.classList.add("typing"); // add the typing class to start the animation
-typeWriter();
+// Start animation after page loads
+window.addEventListener("DOMContentLoaded", () => {
+  quoteElement.classList.add("typing"); // make quote visible
+  typeWriter();
+});
