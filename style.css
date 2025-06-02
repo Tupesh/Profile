@@ -13,8 +13,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  text-align: center;
+  min-height: 100vh;
+  padding-bottom: 80px; /* space for footer */
 }
 
 /* Profile Picture */
